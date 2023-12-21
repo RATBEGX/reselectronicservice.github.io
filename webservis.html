@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animasi Bergerak di Tepi Tombol</title>
+  <style>
+    @keyframes moveBorder {
+      0% { border-color: red; transform: translateX(0); }
+      50% { border-color: blue; transform: translateX(10px); }
+      100% { border-color: red; transform: translateX(0); }
+    }
+
+    input[type="submit"] {
+      border: 2px solid red;
+      padding: 10px;
+      animation: moveBorder 2s linear infinite;
+    }
+  </style>
+</head>
+<body>
+  <input type="submit" value="Login">
+</body>
+</html>
